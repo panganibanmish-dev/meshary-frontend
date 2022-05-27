@@ -1,0 +1,43 @@
+$design-base-screen-width: 1440;
+
+@mixin scalefont($designfontsize) {
+    font-size: $designfontsize+px;
+    @media screen and (min-width: 1200px) {
+        font-size: calc($designfontsize / $design-base-screen-width) * 100 + vw;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: $designfontsize+px;
+    }
+    // font-size: calc(13px + ($designfontsize - 13) * (100vw - 380px) / (1440 - 380));
+}
+
+@mixin scalelineheight($designlineheight) {
+    line-height: $designlineheight+px;
+    @media screen and (min-width: 1200px) {
+        line-height: calc($designlineheight / $design-base-screen-width) * 100 + vw;
+    }
+    @media screen and (min-width: 1440px) {
+        line-height: $designlineheight+px;
+    }
+}
+
+@mixin scalewidth($designwidth) {
+    width: $designwidth+px;
+    @media screen and (min-width: 1200px) {
+        width: calc($designwidth / $design-base-screen-width) * 100 + vw;
+    }
+    @media screen and (min-width: 1440px) {
+        width: $designwidth+px;
+    }
+}
+
+@mixin scaleheight($designheight) {
+    height: $designheight+px;
+    @media screen and (min-width: 1200px) {
+        height: calc($designheight / $design-base-screen-width) * 100 + vw;
+    }
+    @media screen and (min-width: 1440px) {
+        height: $designheight+px;
+    }
+}
+

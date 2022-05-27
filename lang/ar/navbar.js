@@ -1,0 +1,18 @@
+export default {
+    for_seller: "للبائع",
+    for_buyer: "للمشتري",
+    for_advisor: "للمستشار",
+    about_us: "معلومات عنا",
+    premium: "الممتازة",
+    language: "لغة",
+    login: "تسجيل دخول",
+    join_us: "انضم إلينا الآن",
+    marketplace: 'المتجر',
+    messages: 'رسائل',
+    sellers: 'الباعة',
+    my_startup: 'بدء التشغيل الخاص بي',
+    metrics: 'المقاييس',
+    advisors: 'المستشارون',
+    resources: 'موارد',
+    flag: 'ar.svg',
+}

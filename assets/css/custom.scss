@@ -1,0 +1,86 @@
+$primary: #009ddd;
+$blue: #009ddd;
+$dark: #000000;
+$danger: palevioletred;
+$disabled: #e2e6ea;
+$success: #4caf50;
+$container-max-widths: (sm: 720px,
+    // md: 720px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1440px,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./vars";
+
+.fs-13 {
+    font-size: 12px;
+}
+
+.fs-16 {
+    font-size: 14px;
+    ;
+}
+
+.fs-22 {
+    font-size: 19px;
+}
+
+@media screen and (min-width: 1024px) {
+    .fs-12 {
+        @include scalefont(12);
+    }
+
+    .fs-13 {
+        @include scalefont(13);
+    }
+
+    .fs-14 {
+        @include scalefont(14);
+    }
+
+    .fs-16 {
+        @include scalefont(16);
+    }
+
+    .fs-18 {
+        @include scalefont(18);
+    }
+
+    .fs-22 {
+        @include scalefont(22);
+    }
+
+    .fs-56 {
+        @include scalefont(56);
+    }
+
+    .lh-18 {
+        @include scalelineheight(18);
+    }
+
+    .lh-19 {
+        @include scalelineheight(19);
+    }
+}
+
+.text-light {
+    color: #999999 !important;
+}
+
+.modal-content {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: .8px #d4d4d4 solid;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: transparent;
+}
